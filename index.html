@@ -660,13 +660,13 @@ Smartphone Compatible web template" />
 
         <div class="col-md-6 mail_right">
           <form action="envia_fale.php" method="post" name="form">
-            <input type="text" name="nome" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nome';}"
+            <input type="text" name="nome" value="Name" placeholder="Nome"
               required="">
-            <input type="email" name="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"
+            <input type="email" name="email" value="Email" placeholder="Email"
               required="">
-            <input type="text" name="assunto" value="Matters" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Assunto';}"
+            <input type="text" name="assunto" value="Matters"  placeholder="Assunto"
               required="">
-            <textarea name="mensagem" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensagem...';}" required="">Mensagem...</textarea>
+            <textarea name="mensagem"  placeholder="Mensagem" required="">Mensagem...</textarea>
             <input type="submit" name="submit" value="Send">
 
           </form>
@@ -698,13 +698,6 @@ Smartphone Compatible web template" />
     </div>
   </div>
   <!-- //footer -->
-
-  <?php
-    if (isset($_POST["acao"])){
-    echo "<script>alert('Formulário Foi enviado pelo método POST')</script>";
-    }
-  ?>
-
   <!-- /container -->
   <a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
   <!--start-smooth-scrolling-->
